@@ -1,3 +1,5 @@
+# Chapter 15: Python and Databases
+
 import sqlite3
 
 conn = sqlite3.connect('emaildb.sqlite')
