@@ -1,3 +1,5 @@
+# Chapter 8: Lists
+
 # Exercise 4: Download a copy of the file www.py4e.com/code3/romeo.txt.
 # Write a program to open the file romeo.txt and read it line by line.
 # For each line, split the line into a list of words using the split function.
@@ -11,20 +13,17 @@ fhandle = open(fname)
 words = list()
 final = list()
 
-#criando uma lista com as palavras do texto
+#creating a list with the text words
 for line in fhandle :
-    line = line.rstrip() #retira os espaços em branco
-    wds = line.split() #separa a linha em palavras
-#    words = words + wds
+    line = line.rstrip() # remove blank spaces
+    wds = line.split() # split the line into words
+    words = words + wds
 
-print(type(wds))
-#print(type(words))
+# creating a list without repeated words
+for word in words :
+     if word not in final :
+         final.append(word)
 
-#criando uma lista sem palavras repetidas
-# for word in words :
-#     if word not in final :
-#         final.append(word)
-#
-# final.sort()
-#
-# print(final)
+final.sort()
+
+print(final)
