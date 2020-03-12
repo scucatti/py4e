@@ -1,2 +1,2 @@
-print("Hello world!")
-print('testing Git and GitHub')
+#this file is here only to test Git/GitHub features
+print('Hello world!'')
