@@ -1,4 +1,7 @@
-# Exercise 1: Write a program to read through a file and print the contents of the file (line by line) all in upper case.
+# Chapter 7: Files
+
+# Exercise 1: Write a program to read through a file and print the contents
+# of the file (line by line) all in upper case.
 
 fname = input('Enter a file: ')
 fhand = open(fname)
